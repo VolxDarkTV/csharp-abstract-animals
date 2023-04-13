@@ -8,6 +8,6 @@ namespace csharp_abstract_animals
 {
     internal interface IVolante
     {
-        public string FaiVolare();
+        void Vola();
     }
 }

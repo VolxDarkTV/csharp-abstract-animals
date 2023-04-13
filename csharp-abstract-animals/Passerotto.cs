@@ -22,9 +22,9 @@ namespace csharp_abstract_animals
             Console.WriteLine("CipCip");
         }
 
-        public string FaiVolare()
+        public void Vola()
         {
-            return "Fai volare!!!";
+            Console.WriteLine("Voloooo!");
         }
     }
 }
