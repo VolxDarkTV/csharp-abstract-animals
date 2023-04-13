@@ -2,6 +2,14 @@
 {
     internal class Program
     {
+        public static void FaiVolare(IVolante volante)
+        {
+            volante.Vola();
+        }
+        public static void FaiNuotare(INuotante nuotante)
+        {
+            nuotante.Nuota();
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("\n------------------\n");
@@ -13,7 +21,7 @@
             cane.Dormi();
             cane.Verso();
             cane.Mangia();
-            cane.Nuota();
+            FaiNuotare(cane);
 
             Console.WriteLine("\n------------------\n");
 
@@ -24,7 +32,7 @@
             passero.Dormi();
             passero.Verso();
             passero.Mangia();
-            passero.Vola();
+            FaiVolare(passero);
 
             Console.WriteLine("\n------------------\n");
 
@@ -35,7 +43,7 @@
             aquila.Dormi();
             aquila.Verso();
             aquila.Mangia();
-            aquila.Vola();
+            FaiVolare(aquila);
 
             Console.WriteLine("\n------------------\n");
 
@@ -46,7 +54,7 @@
             delfino.Dormi();
             delfino.Verso();
             delfino.Mangia();
-            delfino.Nuota();
+            FaiNuotare(delfino);
 
             Console.WriteLine("\n------------------\n");
 
