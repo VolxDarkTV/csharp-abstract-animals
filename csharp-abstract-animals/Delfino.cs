@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal class Delfino : Animale
+    internal class Delfino : Animale, INuotante
     {
         public Delfino (string name) : base (name) 
         {
@@ -20,6 +20,11 @@ namespace csharp_abstract_animals
         public override void Verso()
         {
             Console.WriteLine("ih ih iiii ih ih iiii ih");
+        }
+
+        public string FaiNuotare()
+        {
+            return "Nuotooo!";
         }
     }
 }

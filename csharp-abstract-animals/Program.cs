@@ -13,6 +13,7 @@
             cane.Dormi();
             cane.Verso();
             cane.Mangia();
+            Console.WriteLine(cane.FaiNuotare());
 
             Console.WriteLine("\n------------------\n");
 
@@ -23,6 +24,7 @@
             passero.Dormi();
             passero.Verso();
             passero.Mangia();
+            Console.WriteLine(passero.FaiVolare());
 
             Console.WriteLine("\n------------------\n");
 
@@ -33,6 +35,7 @@
             aquila.Dormi();
             aquila.Verso();
             aquila.Mangia();
+            Console.WriteLine(aquila.FaiVolare());
 
             Console.WriteLine("\n------------------\n");
 
@@ -43,6 +46,7 @@
             delfino.Dormi();
             delfino.Verso();
             delfino.Mangia();
+            Console.WriteLine(delfino.FaiNuotare());
 
             Console.WriteLine("\n------------------\n");
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal class Passerotto : Animale
+    internal class Passerotto : Animale, IVolante
     {
         public Passerotto(string nome) : base(nome)
         {
@@ -20,6 +20,11 @@ namespace csharp_abstract_animals
         public override void Verso()
         {
             Console.WriteLine("CipCip");
+        }
+
+        public string FaiVolare()
+        {
+            return "Fai volare!!!";
         }
     }
 }
